@@ -9,6 +9,7 @@ const EXTERNAL_CONFIG_SHEET_ID = '1-566gqkyZRNDeNtXWUjKDB_H8A9XbhCu8zL-uaZdGT8';
 // IMPORTANT: STAGING_MODE must be read DYNAMICALLY from Script Properties, not cached as a constant
 // This ensures changes take effect immediately without requiring trigger reinstallation
 // Default to 'Y' (staging) if property not set - safer for testing
+// comment test 10.30.25
 function getStagingMode_() {
 	try {
 		const v = String(PropertiesService.getScriptProperties().getProperty('STAGING_MODE') || 'N').trim().toUpperCase();
